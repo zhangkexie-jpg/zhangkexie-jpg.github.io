@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Hermes | 隐私政策</title><meta name="description" content="Hermes Google OAuth 个人应用隐私政策，介绍数据的访问、使用、保存与撤销方式。"><style>
+:root{--ink:#1c3136;--muted:#53656b;--line:#dfe8e8;--accent:#116b67;--bg:#f5f8f8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+main{max-width:880px;margin:auto;padding:32px 22px 80px}
+header{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:5px 0 20px;border-bottom:1px solid var(--line)}a{color:var(--accent);text-underline-offset:3px}
+.logo{font-size:19px;font-weight:760;letter-spacing:.02em}.eyebrow{color:var(--accent);font-size:13px;font-weight:650}
+h1{font-size:clamp(32px,5.5vw,50px);line-height:1.25;letter-spacing:-.03em;margin:40px 0 16px}h2{font-size:20px;line-height:1.4;margin:0 0 14px}p{margin:0 0 14px}
+.lead{font-size:18px;color:var(--muted);max-width:750px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:30px 0}.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:26px 28px;margin:20px 0}
+.cards .card{margin:0}.small{font-size:14px;color:var(--muted)}li{margin:7px 0}footer{border-top:1px solid var(--line);margin-top:45px;padding-top:21px;font-size:14px;color:var(--muted)}
+@media(max-width:650px){.cards{grid-template-columns:1fr}.card{padding:21px}main{padding:24px 16px 55px}}
+</style></head><body><main>
+<header><a class="logo" href="/" style="text-decoration:none;color:inherit">Hermes</a><a href="/privacy.html">隐私政策 / Privacy Policy</a></header>
+<h1>隐私政策<br><span class="small" style="font-size:20px">Privacy Policy</span></h1>
+<p class="small">生效日期：2026 年 10 月 22 日 · Last updated: October 22, 2026</p>
+<section class="card"><h2>1. 应用与管理者</h2><p>Hermes 是由个人维护、供授权用户自行使用的 AI 助理和自动化工作流，不是 Google、GitHub 或 Gemini 的官方应用。数据处理相关联系邮箱：<a href="mailto:zhangkexie@gmail.com">zhangkexie@gmail.com</a>。</p></section>
+<section class="card"><h2>2. 访问的数据与权限</h2><p>应用仅可访问用户在 Google OAuth 授权页面同意的服务和范围。已使用的能力包括 Google Drive 文件及文件夹的只读检索、读取或导出，用来响应用户明确指定的文档任务。如用户在独立配置中授权了 Gmail 相关权限，也可能按其要求读取、摘要或处理邮件；具体功能以当时的授权范围和配置为准。</p><p>授权元数据、必要的文件内容、任务文本、模型生成的摘要以及用于验证连接的技术状态，可能仅在执行相应功能时被处理。本网站本身不会要求 Google 登录，也不会主动读取 Google 账户。</p></section>
+<section class="card"><h2>3. 处理目的</h2><p>这些数据仅用于用户请求的资料查询、文档归纳、独立意见复核、任务自动化及必要的故障排查。不会将 Google 用户数据出售给数据经纪商，不用于广告投放、广告定向，也不用于确定信贷资格。</p></section>
+<section class="card"><h2>4. 数据传输与第三方处理</h2><p>在执行用户明确指定且授权的 AI 分析任务时，必要的文档内容可能发送到 Google Gemini API 作模型处理；工作流可能在 GitHub Actions 的临时执行环境处理 Google Drive 原件。处理结果、少量必要的任务状态或经限制的摘要可能写入访问受限的私人 GitHub 仓库 Issue；其内容会按照 GitHub 服务的规则保存。由于自动去标识化并非绝对可靠，不应假定所有敏感信息必然被完整过滤。</p><p>Google、GitHub 等服务提供者按各自协议及政策处理其服务内的数据。未经用户针对相关任务的授权，不会把私人 Google Drive 原件发布到本公开网站，也不会因为页面上包含链接而自动把原件提交给 AI 模型。</p></section>
+<section class="card"><h2>5. 凭据、存储与保留</h2><p>为保持 OAuth 授权，授权客户端及刷新令牌可能由用户自行保存在本地配置或受限的 GitHub Actions Secrets 中；它们不会写入此公开网站或公开 GitHub 仓库。任务运行时可能在短暂的执行内存中处理文件，受各提供者技术性日志和保留政策约束。</p><p>部分任务记录、回复和分析摘要可能在私人 GitHub Issue 中持续保存，直到用户删除或要求维护者移除；本政策无法覆盖第三方平台独立保留的备份或日志。</p></section>
+<section class="card"><h2>6. 安全措施</h2><p>使用 Google 官方 OAuth 和 API 授权、HTTPS 连接、只读权限（适用于 Drive 读取通道）、受限的仓库访问范围以及必要的执行权限和数据量限制。敏感文档应在具体任务中确认是否可以发送至第三方模型；用户应避免把密钥、完整私人病历或其他受限原件粘贴到公开网站和公开 Issue。</p></section>
+<section class="card"><h2>7. 撤销、访问和删除</h2><p>用户可通过 <a href="https://myaccount.google.com/connections">Google 账号第三方应用与服务连接管理</a> 撤销 OAuth 授权。撤销后将停止依赖该授权的后续读取，但不会自动删除之前已写入私人 GitHub 任务中的摘要或其他平台留存记录。</p><p>用户可通过<a href="mailto:zhangkexie@gmail.com">联系邮箱</a>请求核实或移除由本应用维护的任务数据；相应删除处理受平台权限、技术限制和依法保存要求约束。</p></section>
+<section class="card"><h2>8. 政策更新</h2><p>若应用的数据访问范围、第三方处理方式或留存安排发生实质变化，将更新此页，并在适当情形下重新向用户取得许可。</p></section>
+<section class="card"><h2>English summary</h2><p>Hermes is a privately configured personal assistant. With user authorization, it accesses Google Drive documents through OAuth read-only functionality and may use separately granted Gmail permissions for mail workflows. Data are used only to deliver user-requested features. When explicitly approved for an individual task, selected content may be processed by the Google Gemini API via GitHub Actions. Limited task output can be stored in private GitHub Issues; OAuth credentials are kept in restricted configuration or secrets storage, not this public website. No Google user data are sold, used for advertising or credit decisions. Users can revoke access at <a href="https://myaccount.google.com/connections">Google Account Connections</a> and request review or deletion of maintained task data via <a href="mailto:zhangkexie@gmail.com">email</a>. Third-party retention policies may apply.</p></section>
+<footer><p>个人应用说明 · Personal-use application · <a href="mailto:zhangkexie@gmail.com">联系开发者 / Contact</a></p><p>本网站由应用开发者维护，不代表 Google、GitHub 或 Gemini 官方。</p><p>更新日期 / Updated: 2026-10-22</p></footer></main></body></html>
