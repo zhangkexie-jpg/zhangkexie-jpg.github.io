@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Hermes | 个人 AI 助理</title><meta name="description" content="个人使用的 Hermes AI 助理 OAuth 应用说明及隐私政策。"><style>
+:root{--ink:#1c3136;--muted:#53656b;--line:#dfe8e8;--accent:#116b67;--bg:#f5f8f8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+main{max-width:880px;margin:auto;padding:32px 22px 80px}
+header{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:5px 0 20px;border-bottom:1px solid var(--line)}a{color:var(--accent);text-underline-offset:3px}
+.logo{font-size:19px;font-weight:760;letter-spacing:.02em}.eyebrow{color:var(--accent);font-size:13px;font-weight:650}
+h1{font-size:clamp(32px,5.5vw,50px);line-height:1.25;letter-spacing:-.03em;margin:40px 0 16px}h2{font-size:20px;line-height:1.4;margin:0 0 14px}p{margin:0 0 14px}
+.lead{font-size:18px;color:var(--muted);max-width:750px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:30px 0}.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:26px 28px;margin:20px 0}
+.cards .card{margin:0}.small{font-size:14px;color:var(--muted)}li{margin:7px 0}footer{border-top:1px solid var(--line);margin-top:45px;padding-top:21px;font-size:14px;color:var(--muted)}
+@media(max-width:650px){.cards{grid-template-columns:1fr}.card{padding:21px}main{padding:24px 16px 55px}}
+</style></head><body><main>
+<header><a class="logo" href="/" style="text-decoration:none;color:inherit">Hermes</a><a href="/privacy.html">隐私政策 / Privacy Policy</a></header>
+<p class="eyebrow" style="margin-top:35px">PERSONAL AI WORKFLOW</p>
+<h1>Hermes · 个人 AI 助理</h1>
+<p class="lead">Hermes 是供授权用户自行配置和使用的私人智能助理，用于整理信息、检索资料和完成经用户明确要求的 AI 分析与文档协同工作。此页面是应用说明，不提供公开账号注册或数据访问功能。</p>
+<div class="cards">
+<section class="card"><h2>Google Drive 资料读取</h2><p>经用户授予相应 OAuth 权限后，根据任务所指定的文件或文件夹只读读取内容，以进行提取、摘要和核对。当前协同读取通道使用 Google Drive 只读权限，不修改源文件。</p></section>
+<section class="card"><h2>邮件和自动化任务</h2><p>在用户另外启用和授权的情况下，Hermes 可辅助处理邮件相关的查询和工作流；访问范围由 Google 授权页面显示的权限决定。不同设备或任务可具有不同的功能配置。</p></section>
+</div>
+<section class="card"><h2>AI 复核与第三方服务</h2><p>对于用户明确指定并允许送至外部模型的资料，工作流可在 GitHub Actions 环境内调用 Google Gemini API 进行分析，并在受限的私人 GitHub 任务中保存分析摘要。未经明确任务授权，不因用户访问本网站而读取其 Drive 或邮件。</p><p><strong>重要：</strong>把文件提交给 Gemini API 进行处理与“仅在本地读取”不同。敏感材料是否允许这样处理，应由用户在每个任务中决定。</p></section>
+<section class="card"><h2>Google 数据使用说明</h2><p>本应用以完成用户要求的助理功能为目的处理经授权的数据，不出售用于广告定位。如何访问、使用、共享、保留和删除 Google 用户数据，详见 <a href="/privacy.html">公开隐私政策</a>。</p><p class="small">授权可以在 Google 账号的第三方连接设置中撤销；撤销后，依赖该权限的功能可能无法继续运行。</p></section>
+<section class="card"><h2>English overview</h2><p>Hermes is a personally configured AI assistant for document retrieval, mail-related workflows where separately authorized, and user-directed AI reviews. With authorization, it may read selected Google Drive files. Only explicitly approved tasks transmit selected content to Gemini API. Review summaries may be retained in private GitHub Issues. See the <a href="/privacy.html">Privacy Policy</a> for access, use, retention, sharing and deletion details.</p></section>
+<footer><p>个人应用说明 · Personal-use application · <a href="mailto:zhangkexie@gmail.com">联系开发者 / Contact</a></p><p>本网站由应用开发者维护，不代表 Google、GitHub 或 Gemini 官方。</p><p>更新日期 / Updated: 2026-10-22</p></footer></main></body></html>
